@@ -61,7 +61,7 @@ if(UNIX AND NOT APPLE)
 endif(UNIX AND NOT APPLE)
 
 if(APPLE)
-  set_target_properties(htd PROPERTIES IMPORTED_LOCATION ${binary_dir}/lib/libhtd.dylib)
+  set_target_properties(htd PROPERTIES IMPORTED_LOCATION ${binary_dir}/lib/libhtd.0.dylib)
 endif(APPLE)
 add_dependencies(htd htd_github-build)
 
